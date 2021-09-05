@@ -2,7 +2,7 @@
   count 用來倒數的變數
 */
 const innerCircle = document.getElementById('inner');
-let count =0; 
+let count =100; 
 const circleNumber = setInterval(() => {
   if(count === 0) {
     clearInterval(circleNumber);
