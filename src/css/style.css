@@ -1,0 +1,96 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+*
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+body
+{
+  background-color: #393536;
+  background-image: url('../img/backfround/gear.png');
+  background-size: 200px 200px;
+}
+.container
+{
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 100vh;
+  background-color: #FDB7C6;
+  padding: 0 50px;
+  overflow: hidden;
+}
+.main-page {
+  transition: ease-in-out 1s;
+  opacity: 0;
+}
+.main-page-show {
+  opacity: 1;
+}
+.logo
+{
+  transition: ease-in-out .5s;
+  position: absolute;
+  display: inline-block;
+  background-image: url('../img/backfround/Error_logo.png');
+  width: 250px;
+  height: 150px;
+  background-size: 250px 150px;
+  text-indent: 101%;
+  overflow: hidden;
+  z-index: 3;
+}
+.logo:hover
+{
+  width: 310px;
+  height: 200px;
+  background-size: 310px 200px;
+}
+.role-zoom
+{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  z-index: 5;
+}
+.chatBox
+{
+  position:absolute;
+  width: 300px;
+  height: 150px;
+  background-color: rgba(131, 232, 239, 0.7);
+  color: #C72C6C;
+  left: calc(50% - 150px);
+  bottom: 50px;
+  z-index: 5;
+  padding: 0 10px;
+  box-shadow: 2px 2px 4px 1px,
+              -2px -2px 4px 1px #fdecf0;
+}
+.chat-style
+{
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.chat-font-style
+{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.chat-text
+{
+  margin-top: 10px;
+  word-break: break-all;
+}
+
+.show
+{
+  position: absolute;
+  display: none;
+}

@@ -1,0 +1,310 @@
+.role-cloth
+{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 540px; /*600(視窗寬一半) -60 (衣服寬的一半)*/
+  z-index: 2;
+}
+.role-face
+{
+  transition: all .4s ease; 
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 550px; /*600(視窗寬一半) -50 (臉寬的一半)*/
+  z-index: 2;
+}
+.face-left
+{
+  left: 540px;
+}
+.face-right
+{
+  left: 560px;
+}
+.face-left-top
+{
+  transform: translate(50px,10px) rotate(20deg) translate(-50px,-10px);
+  transform-origin: 0 0;
+}
+.face-left-down
+{
+  transform: translate(50px,90px) rotate(-20deg) translate(-50px,-90px);
+  transform-origin: 0 0;
+}
+.face-right-top
+{
+  transform: translate(50px,10px) rotate(-20deg) translate(-50px,-10px);
+  transform-origin: 0 0;
+}
+.face-right-down
+{
+  transform: translate(50px,90px) rotate(20deg) translate(-50px,-90px);
+  transform-origin: 0 0;
+}
+.neck
+{
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  background-color: #414050;
+  border-radius: 5px;
+  left: 585px;
+  z-index: 2;
+}
+
+.role-back-hair
+{
+  transition: all 0.4s ease; 
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 525px; /*600(視窗寬一半) -75 (後髮寬的一半)*/
+  z-index: 1;
+}
+.back-hair-left
+{
+  transform: translate(5px,0);
+}
+.back-hair-right
+{
+  transform: translate(-5px,0);
+}
+.back-hair-left-top
+{
+  transform: translate(5px,5px) rotate(5deg);
+}
+.back-hair-left-down
+{
+  transform: translate(-5px,-5px) rotate(-5deg);
+}
+.back-hair-right-top
+{
+  transform: translate(-5px,-5px) rotate(-5deg);
+}
+.back-hair-right-down
+{
+  transform: translate(5px,5px) rotate(5deg);
+}
+.role-front-hair
+{
+  transition: all 0.4s ease;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 545px; /*600(視窗寬一半) -55 (前髮寬的一半)*/
+  z-index: 4;
+}
+.front-hair-left
+{
+  left: 535px;
+}
+.front-hair-right
+{
+  left: 555px;
+}
+.front-hair-top
+{
+  height: 100px;
+}
+.front-hair-down
+{
+  height: 130px;
+}
+.front-hair-left-top
+{
+  transform: translate(55px,10px) rotateY(30deg) rotateZ(20deg) translate(-55px,-10px);
+  transform-origin: 0 0;
+}
+.front-hair-left-down
+{
+  transform: translate(55px,100px) rotateY(10deg) rotateZ(-20deg) translate(-60px,-90px);
+  transform-origin: 0 0;
+}
+.front-hair-right-top
+{
+  transform: translate(55px,10px) rotateY(-30deg) rotateZ(-20deg) translate(-55px,-10px);
+  transform-origin: 0 0;
+}
+.front-hair-right-down
+{
+  transform: translate(55px,100px) rotateY(-10deg) rotateZ(20deg) translate(-45px,-95px);
+  transform-origin: 0 0;
+}
+
+/*馬尾*/
+.role-left-ponytail
+{
+  transition: all 0.4s ease;
+  transform-origin: 80px 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 470px; /* 600(視窗寬一半)-100(馬尾寬，可以讓她全部在左邊) - 50(臉寬的一半) + 20 (馬尾圖左右空白各20)*/
+}
+.left-ponytail-left
+{
+  width: 80px;
+  height: 80px;
+  left: 480px;
+}
+.left-ponytail-right
+{
+  z-index: 3;
+  left: 480px;
+}
+.left-ponytail-top
+{
+  transform: rotate(-20deg);
+}
+.left-ponytail-down
+{
+  transform: rotate(35deg);
+}
+.left-ponytail-left-top
+{
+  transform: rotateY(40deg) scale(0.8);
+}
+.left-ponytail-left-down
+{
+  transform: rotateY(40deg) scale(0.8);
+}
+.left-ponytail-right-top
+{
+  z-index: 3;
+  transform: scale(1.2) rotate(-5deg) translate(10px,0px);
+}
+.left-ponytail-right-down
+{
+  z-index: 3;
+  transform: scale(1.2) rotate(-5deg) translate(10px,0px);
+}
+/*右馬尾*/
+.role-right-ponytail
+{
+  transition: all 0.4s ease;
+  transform-origin: 20px 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 630px; /* 600(視窗寬一半)+ 50(臉寬的一半) - 20 (馬尾圖左右空白各20)*/
+}
+.right-ponytail-left
+{
+  z-index: 3;
+  left: 620px;
+}
+.right-ponytail-right
+{
+  width: 80px;
+  height: 80px;
+  left: 640px;
+}
+.right-ponytail-top
+{
+  transform: rotate(20deg);
+}
+.right-ponytail-down
+{
+  transform: rotate(-35deg);
+}
+.right-ponytail-left-top
+{
+  z-index: 3;
+  transform: scale(1.2) rotate(5deg) translate(-10px,0px);
+}
+.right-ponytail-left-down
+{
+  z-index: 3;
+  transform: scale(1.2) rotate(5deg) translate(-10px,0px);
+}
+.right-ponytail-right-top
+{
+  transform: rotateY(-40deg) scale(0.8);
+}
+.right-ponytail-right-down
+{
+  transform: rotateY(-40deg) scale(0.8);
+}
+/*眼睛*/
+.role-left-eye
+{
+  transition: all 0.4s ease;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 570px;/*600(視窗寬一半) - 15(眼睛寬，可以讓她全部在左邊)-15(眼距多一個眼睛的寬度)*/
+  z-index: 3;
+}
+.left-eye-left
+{
+  left: 560px;
+  width: 13px;
+  height: 13px;
+}
+.left-eye-right
+{
+  left: 585px;
+}
+.left-eye-left-top
+{
+  width: 12px;
+  height: 12px;
+  transform: translate(-20px,-10px);
+}
+.left-eye-left-down
+{
+  width: 12px;
+  height: 12px;
+  transform: translate(-20px,15px);
+}
+.left-eye-right-top
+{
+  transform: translate(30px,-5px);
+}
+.left-eye-right-down
+{
+  transform: translate(30px,0px);
+}
+
+/*右眼*/
+.role-right-eye
+{
+  transition: all 0.4s ease;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 615px;/*600(視窗寬一半) + 15(眼距多一個眼睛的寬度)*/
+  z-index: 3;
+}
+.right-eye-left
+{
+  left: 600px;
+}
+.right-eye-right
+{
+  width: 13px;
+  height: 13px;
+  left: 625px;
+}
+.right-eye-left-top
+{
+  transform: translate(-30px,0px);
+}
+.right-eye-left-down
+{
+  transform: translate(-30px,5px);
+}
+.right-eye-right-top
+{
+  width: 12px;
+  height: 12px;
+  transform: translate(20px,-15px);
+}
+.right-eye-right-down
+{
+  width: 12px;
+  height: 12px;
+  transform: translate(20px,10px);
+}

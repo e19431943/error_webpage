@@ -1,0 +1,108 @@
+.login-page {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.login-page-hiddle {
+  opacity: 0;
+}
+.login-title {
+  transition: ease-in-out .5s;
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  font-size: 3rem;
+  z-index: 2;
+}
+.enter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background-color: #393536;
+}
+.enter-container > span:nth-child(1) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #C72C6C, 0 0 40px #C72C6C, 0 0 80px #C72C6C;
+}
+.enter-button {
+  background-image: url('../img/backfround/error_button02.png');
+  transition: ease-in-out .5s;
+  background-size: 0px 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 4;
+}
+.show-enter {
+  background-size: 280px 280px;
+  width: 280px;
+  height: 280px;
+}
+.show-enter:hover {
+  width: 310px;
+  height: 310px;
+  background-size: 310px 310px;
+}
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background:  radial-gradient(#C72C6C, #393536);
+  border-radius: 50%;
+  box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.7), 
+              -4px -4px 6px -2px rgba(255, 255, 255, 0.7),
+              inset 2px 2px 4px -1px rgba(0, 0, 0, 0.5),
+              inset -2px -2px 4px -1px rgba(255, 255, 255, 0.5);
+  transition: ease-in-out .5s;
+  z-index: 3;
+}
+.inner:hover {
+  width: 320px;
+  height: 320px;
+  font-size: 2.5rem;
+}
+.inner-big {
+  width: 320px;
+  height: 320px;
+  font-size: 2.5rem;
+}
+.number {
+  color: #FDB7C6;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+
+}
+.circle-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+circle {
+  fill: none;
+  stroke: url('#GradientColor');
+  stroke-width: 2px;
+  stroke-dasharray: 1256;
+  stroke-dashoffset: 1256;
+  animation: circleAnimattion 5s linear infinite;
+}
+/* 動畫繪製 */
+@keyframes circleAnimattion {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
